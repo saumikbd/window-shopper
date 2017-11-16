@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,21 +22,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Window_Shopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-3K-e6B">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="QFS-bK-H7s">
-                                <rect key="frame" x="147.5" y="60" width="80" height="80"/>
+                                <rect key="frame" x="167" y="60" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QFS-bK-H7s" secondAttribute="height" multiplier="1:1" id="3qT-we-zPJ"/>
                                     <constraint firstAttribute="width" constant="80" id="rhH-8q-DVI"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Hourly Wage" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UmB-oI-QXf" customClass="CustomTextField" customModule="Window_Shopper" customModuleProvider="target">
-                                <rect key="frame" x="30" y="180" width="315" height="50"/>
+                                <rect key="frame" x="30" y="180" width="354" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="m2s-Wl-Lyd"/>
                                 </constraints>
@@ -45,7 +45,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Price" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-ey-RQL" customClass="CustomTextField" customModule="Window_Shopper" customModuleProvider="target">
-                                <rect key="frame" x="30" y="255" width="315" height="50"/>
+                                <rect key="frame" x="30" y="255" width="354" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JhI-Oz-EqS"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="JzD-Rs-Ka6"/>
@@ -55,7 +55,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-XM-lFD">
-                                <rect key="frame" x="30" y="345" width="315" height="40"/>
+                                <rect key="frame" x="30" y="345" width="354" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dCI-TY-oFD"/>
                                 </constraints>
@@ -64,7 +64,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfJ-19-t7Z">
-                                <rect key="frame" x="157.5" y="385" width="60" height="25"/>
+                                <rect key="frame" x="177" y="385" width="60" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="F4X-om-9JX"/>
                                     <constraint firstAttribute="height" constant="25" id="XEc-0f-sIl"/>
@@ -74,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MN-4g-zuZ">
-                                <rect key="frame" x="112.5" y="597" width="150" height="40"/>
+                                <rect key="frame" x="132" y="666" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aIN-D7-pIJ"/>
                                     <constraint firstAttribute="width" constant="150" id="gFB-iK-MFc"/>
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="196" y="-152"/>
         </scene>
     </scenes>
     <resources>

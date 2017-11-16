@@ -36,11 +36,11 @@ class MainVC: UIViewController {
             if let wage = Double(wageTxt), let price = Double(priceTxt){
                 let res = wageObj.getHours(forWage: wage, andPrice: price)
                 if res == -1 {
-                    result.text = "Need Money!"
+                    result.text = "Need Cash!"
                     result.isHidden = false
                 }
                 else if res == 0 {
-                    result.text = "Its Free!"
+                    result.text = "It's Free!"
                     result.isHidden = false
                 }
                 else {
