@@ -11,9 +11,15 @@ import UIKit
 class MainVC: UIViewController {
     @IBOutlet weak var wageTxt: CustomTextField!
     @IBOutlet weak var priceTxt: CustomTextField!
+    @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var hoursLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        result.isHidden = true
+        hoursLbl.isHidden = true
+        
         let calcBtn = UIButton()
         calcBtn.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60)
         calcBtn.backgroundColor = #colorLiteral(red: 0.9155091643, green: 0.6786740422, blue: 0.05688857287, alpha: 1)
@@ -24,7 +30,34 @@ class MainVC: UIViewController {
         priceTxt.inputAccessoryView = calcBtn
     }
     @objc func claculation(){
-        print("claculation tapped")
+        let wageObj = Wage()
+        if let wageTxt = wageTxt.text, let priceTxt = priceTxt.text{
+            view.endEditing(true)
+            if let wage = Double(wageTxt), let price = Double(priceTxt){
+                let res = wageObj.getHours(forWage: wage, andPrice: price)
+                if res == -1 {
+                    result.text = "Need Money!"
+                    result.isHidden = false
+                }
+                else if res == 0 {
+                    result.text = "Its Free!"
+                    result.isHidden = false
+                }
+                else {
+                    result.text = String(res)
+                    result.isHidden = false
+                    hoursLbl.isHidden = false
+                }
+                
+            }
+        }
+        
+    }
+    @IBAction func clearCalculatorBtn(_ sender: Any) {
+        result.isHidden = true
+        hoursLbl.isHidden = true
+        wageTxt.text=""
+        priceTxt.text=""
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
